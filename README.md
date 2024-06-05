@@ -25,4 +25,3 @@ This repository contains code for a facemask detection system implemented using 
 5. **High Performance with High Complexity:** DenseNet121 and InceptionV3 offer excellent accuracy but come with higher complexity and longer training times.
 
 **Conclusion:** The choice of model depends on the specific needs of your application, considering factors like accuracy, training time, model complexity, and available computational resources.
-```
