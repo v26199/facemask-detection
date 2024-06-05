@@ -26,5 +26,3 @@ This repository contains code for a facemask detection system implemented using 
 
 **Conclusion:** The choice of model depends on the specific needs of your application, considering factors like accuracy, training time, model complexity, and available computational resources.
 ```
-
-
