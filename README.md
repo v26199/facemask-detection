@@ -1,4 +1,4 @@
-# Facemask Detection using Transfer Learning
+# Facemask Detection Using Transfer Learning: Balancing Accuracy and Efficiency
 
 ## Overview
 This repository contains code for a facemask detection system implemented using transfer learning with various pretrained models. The system is designed to accurately detect whether individuals are wearing facemasks in images or real-time video streams, contributing to public health safety measures.
@@ -16,12 +16,28 @@ This repository contains code for a facemask detection system implemented using 
 - OpenCV
 - NumPy
 - Matplotlib
+  
+## Models and Results
+- InceptionV3: Accuracy: 99.56%, Validation: 98.67%, Time: 438.11s
+- DenseNet121: Accuracy: 99.70%, Validation: 99.56%, Time: 508.63s
+- Xception: Accuracy: 99.70%, Validation: 99.56%, Time: 439.86s
+- MobileNetV2: Accuracy: 99.66%, Validation: 99.56%, Time: 435.51s
+- ResNet152V2: Accuracy: 99.51%, Validation: 99.56%, Time: 833.77s
+- VGG16: Accuracy: 93.56%, Validation: 54.87%, Time: 262.43s
 
-**Results:** Here are the key findings:
-1. **High Accuracy with Moderate Training Time:** Models like InceptionV3 and DenseNet121 offer high accuracy (close to 1.0) with reasonable training times (85-125 seconds).
-2. **Faster Training with Slightly Lower Accuracy:** Xception and MobileNetV2 provide good performance with validation accuracies above 0.97 and faster training times (60-102 seconds).
-3. **Balanced Performance with Lower Complexity:** ResNet152V2 and VGG16 achieve decent accuracies (around 0.91 to 0.99) with lower complexity.
-4. **Resource-Constrained Environments:** MobileNetV2 and VGG16 are suitable for environments with limited computational resources due to their lower complexity.
-5. **High Performance with High Complexity:** DenseNet121 and InceptionV3 offer excellent accuracy but come with higher complexity and longer training times.
+## Insights
+1. Accuracy: DenseNet121 and Xception achieved the highest accuracy (99.70%). InceptionV3 was also highly accurate (99.56%).
+2. Time: VGG16 was the fastest (262.43s), but with much lower validation accuracy. MobileNetV2 was efficient (435.51s) with high accuracy.
+3. Model Performance: Xception, DenseNet121, and MobileNetV2 had low validation losses, indicating reliable performance.
+4. Complexity vs. Performance: MobileNetV2 and VGG16 are ideal for resource-constrained environments. DenseNet121 and InceptionV3 offer higher accuracy with more computational demand.
 
-**Conclusion:** The choice of model depends on the specific needs of your application, considering factors like accuracy, training time, model complexity, and available computational resources.
+## Learning Outcomes
+1. Transfer Learning: Gained a deeper understanding of using pre-trained models to boost performance and reduce training time.
+2. Data Prep: Learned the importance of preprocessing for optimizing model accuracy.
+3. Model Evaluation: Developed skills in assessing models using accuracy, time, and loss metrics.
+4. Efficiency Balance: Learned to balance accuracy, complexity, and training time for practical uses.
+
+## Conclusion
+The facemask detection project showcased my ability to implement and optimize machine learning solutions effectively. DenseNet121 emerged as the best model, with the highest validation accuracy (99.56%), though MobileNetV2 also stood out for its efficient training time (435.51s) and high validation accuracy (99.56%).
+
+
